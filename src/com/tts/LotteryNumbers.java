@@ -30,7 +30,7 @@ public class LotteryNumbers {
         System.out.println("\nWhat is the two-digit model year of your car?");
         int carYr = qInput.nextInt();
         System.out.println("\nWhat is the FIRST name of your favorite actor?");
-        String favActor = qInput.next();
+        String favActor = secScan.nextLine();
         int number1;
         do {
             System.out.println("\nEnter a number between 1 and 50");
