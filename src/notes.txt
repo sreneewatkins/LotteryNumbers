@@ -1,0 +1,28 @@
+IntelliJ offered to change this to an enhanced switch:
+
+private static boolean checkAnswer(char userShorterAns){
+boolean flag;
+ switch (userShorterAns) {
+     case 'y':
+     case 'Y':
+//          msg = "YAY, you said yes";
+         flag = true;
+         break;
+     case 'n':
+     case 'N':
+//          msg = "I guess not";
+         flag = false;
+         break;
+     default:
+//           msg = "Wrong answer :) Please start over";
+         flag = false;
+         System.out.println("Error: Please start over");
+ }
+//   return msg;
+ return flag;
+}//end checkAnswer
+
+//when taking input in the main(), I figured out how to shorten what's read to however many characters I want
+        //this is a cool step, but unnecessary
+        CharSequence shortAnswer = userAnswer.subSequence(0,1);
+        System.out.println("shortAnswer: " + shortAnswer);
